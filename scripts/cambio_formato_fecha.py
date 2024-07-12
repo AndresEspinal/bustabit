@@ -36,6 +36,13 @@ class DateFormat ():
     def new_column(self):
         self.dataframe[self.result_columna] = np.where(self.dataframe[self.prof_columna] > 0, 1, 0)
         return self.dataframe
+    
+    def ejec_dateformat(self):
+        self.fecha()
+        self.porcentaje()
+        self.imputacion()
+        self.new_column()
+        return self.dataframe
         
 
 
